@@ -3,6 +3,9 @@ import presetUno from '@unocss/preset-uno';
 import presetIcons from '@unocss/preset-icons';
 
 export default defineNuxtConfig({
+	runtimeConfig: {
+		apiKey: process.env.NUXT_API_KEY
+	},
   ssr: true,
 	modules: [
     "@unocss/nuxt",
@@ -27,8 +30,5 @@ export default defineNuxtConfig({
 				},
 			})
     ]
-  },
-	runtimeConfig: {
-		apiKey: process.env.NUXT_API_KEY
-	}
+  }
 })
