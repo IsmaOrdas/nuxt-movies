@@ -33,12 +33,17 @@ const toggleDark = useToggle(isDark)
 
 <style lang="scss" scoped>
 .app-header {
+	background-color: var(--white);
 	border-bottom: 1px solid var(--gray);
 	height: var(--header-height);
 	line-height: var(--header-height);
 	padding: 0 1rem;
 	top: 0;
 	z-index: 100;
+
+	body[color-scheme="dark"] & {
+		background-color: var(--dark-bg);
+	}
 
 	h1 {
 		font-size: 24px;

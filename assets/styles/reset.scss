@@ -6,6 +6,7 @@
 	--white: #f5f5f5;
 	--gray: #ccc;
 	--main-text-color: #222;
+	--dark-bg: #2c2c2c;
 	--content-width: 1200px;
 }
 
@@ -36,7 +37,7 @@ body {
   min-height: 100vh;
 
 	&[color-scheme="dark"] {
-		background-color: #2c2c2c;
+		background-color: var(--dark-bg);
 		color: var(--white);
 	}
 }
