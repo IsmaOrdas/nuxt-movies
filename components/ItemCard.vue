@@ -5,10 +5,10 @@
 		</NuxtLink>
 		<div class="mt-2">
 			<a class="movie-card__title mb-2">{{ item.title }}</a>
-			<div class="movie-card__meta m-0">
-				<span class="i-mdi-star-circle"></span>
-				<span>{{ item.vote_average }}</span>
-				<span> | </span>
+			<div class="movie-card__meta flex items-center m-0">
+				<span class="i-mdi-star-circle mb-1 inline-block mr-1"></span>
+				<span class="mr-1">{{ item.vote_average }}</span>
+				<span class="mr-1"> | </span>
 				<span>{{ item?.release_date }}</span>
 			</div>
 		</div>
